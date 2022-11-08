@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stil.css" />
+  </head>
+  <body class="bg-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="display-3 text-center">JSON CRUD UYGULAMASI</h3>
+          <table class="table table-dark text-center table-striped">
+            <thead>
+              <tr>
+                <th>Profil Foto</th>
+                <th>İsim</th>
+                <th>Soyisim</th>
+                <th>E-mail</th>
+                <th>İşlem</th>
+              </tr>
+            </thead>
+            <tbody id="userTable">
+
+             <!--
+               <tr>
+                <td> <input type="text" class="form-control" id="" value=""></td>
+                <td> <input type="text" class="form-control" id="" value=""></td>
+                <td> <input type="text" class="form-control" id="" value=""></td>
+                <td> 
+                  <a href="" class="btn btn-warning"> Güncelle</a>
+                  <a href="" class="btn btn-danger"> Sil</a>
+                </td>
+              </tr>
+             -->
+
+
+
+
+             
+            </tbody>
+          </table>
+          <form class="row">
+            <div class="col-md-3">
+              <img
+                class="form-control"
+                type="img"
+                id="fotos"
+                />
+            </div>
+
+            <div class="col-md-3">
+              <input
+                class="form-control"
+                type="text"
+                id="first_name"
+                placeholder="İsminizi Giriniz"/>
+            </div>
+            <div class="col-md-3">
+              <input
+                class="form-control"
+                type="text"
+                id="last_name"
+                placeholder="Soyisminizi Giriniz"
+              />
+            </div>
+            <div class="col-md-3">
+              <input
+                class="form-control"
+                type="text"
+                id="email"
+                placeholder="Email Giriniz"
+              />
+            </div>
+            <div class="col-md-3 text-end">
+              <a class="btn btn-success" onclick="createUser()">Kullanıcı Oluştur</a>
+              <a class="btn btn-primary" onclick="refreshData()"> Yenile </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="custom.js"></script>
+  </body>
+</html>
